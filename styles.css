@@ -45,18 +45,18 @@ nav .links {
   width: 100%;
   align-items: center;
 }
-.left {
+.hero-left {
   width: 50%;
   min-width: 50%;
   height: 100%;
   display: flex;
   flex-direction: column;
- }
-.left img {
+}
+.hero-left img {
   width: 100%;
   height: 100%;
 }
-.right {
+.hero-right {
   width: 50%;
   height: 100%;
   display: flex;
@@ -64,17 +64,17 @@ nav .links {
   justify-content: center;
   align-items: center;
 }
-.landing .right h1 {
+.landing .hero-right h1 {
   width: 550px;
   font-size: 82px;
   color: #232323;
   font-weight: 700;
   margin-bottom: 25px;
 }
-.landing .right button {
- padding: 7px 25px 7px 28px;
- width: 150px;
- height: 40px;
+.landing .right-button button {
+  padding: 7px 25px 7px 28px;
+  width: 150px;
+  height: 40px;
   background-color: black;
   color: white;
   border: 1.6px;
@@ -103,14 +103,14 @@ nav .links {
   border-radius: 2px;
   transition: 0.3s;
 }
-.services{
+.services {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background-color: #F8F9F8;
+  background-color: #f8f9f8;
 }
 .services-container {
   width: 100%;
@@ -123,10 +123,10 @@ nav .links {
   align-items: center;
   font-size: 1.2rem;
 }
-.service i{
+.service i {
   font-size: 3rem;
 }
-.service{
+.service {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -134,19 +134,22 @@ nav .links {
   gap: 30px;
   width: 250px;
 }
-.service p{
+.service p {
   font-size: 1.2rem;
   color: #232323;
   width: 200px;
   text-align: center;
 }
-.title{
+.title {
   display: flex;
   flex-direction: column;
-  gap: 50px;
   font-size: 1.8rem;
   text-align: center;
   padding: 20px;
+}
+.title p {
+  font-size: 1.2rem;
+  color: #716f6f;
 }
 .divider {
   width: 20%;
@@ -155,47 +158,227 @@ nav .links {
   border: 1px solid #ccc;
   margin: 20px 0;
 }
-@media(max-width: 1100px) {
+
+  .features {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .features-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+  }
+  .features-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 50px;
+  }
+  .feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .features-right {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .features-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .title-white {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 20px;
+}
+.title-white p {
+  font-size: 1.2rem;
+  color: #716f6f;
+}
+.facts{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.facts-container {
+  display: grid;
+  grid-template-areas:
+   "column1 column2 column3 column4";
+   grid-template-columns: repeat(4, 1fr);
+}
+.facts-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2rem;
+  align-items: center;
+  color: white;
+  gap: 30px;
+  padding: 20px;
+}
+@media (max-width: 1170px) {
+  nav {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
   .landing {
     flex-direction: column;
     height: 100vh;
   }
-  .left {
+  .hero-left {
     width: 100%;
-    height: 100vh;
+    height: 50vh;
   }
-  header{
+  header {
     z-index: 5;
   }
-  .right {
+  .hero-right {
     width: 400px;
-    height: auto;
+    height: 50vh;
     margin: 20px;
     padding: 20px;
   }
-  .landing .right h1 {
-    font-size: 5rem;
+  .landing .hero-right h1 {
+    font-size: 4rem;
   }
-}
-@media(max-width: 770px ) {
-  .hamburger {
+  .services {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #f8f9f8;
   }
-  nav{
-    display: none;
+  
+  .features {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  nav .search {
-    display: block
+  .features-container {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+  }
+  .features-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 50px;
+  }
+  .feature {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .features-right {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .features-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
-@media(max-width: 600px) {
-  .right {
+@media (max-width: 900px) {
+  .hero-right {
     width: 400px;
     height: auto;
     margin: 20px;
     padding: 20px;
   }
-  .landing .right h1 {
+  .hero-left {
+    width: 100vw;
+    height: 50vh;
+  }
+  .landing .hero-right h1 {
+    font-size: 4rem;
+  }
+  .services {
+    font-size: 1.3rem;
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+}
+@media (max-width: 875px) {
+  .service {
+    width: 200px;
+  }
+  .services-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .landing .hero-right h1 {
+    font-size: 3rem;
+  }
+  .facts-container {
+  display: grid;
+  grid-template-areas:
+   "column1 column2";
+   grid-template-columns: repeat(2, 1fr);
+}
+.facts-card{
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  color: white;
+  gap: 30px;
+  padding: 20px;
+}
+}
+@media (max-width: 600px) {
+  .hero-right {
+    width: 400px;
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+  }
+  .hero-left {
+    width: 100vw;
+    height: 50vh;
+  }
+  .landing .hero-right h1 {
     font-size: 4rem;
   }
 }
